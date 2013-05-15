@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:local="clr-namespace:MapControl.WPF"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" >
+    <Style TargetType="{x:Type local:Map}">
+        <Setter Property="FrameworkElement.FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:Map}">
+                    <Border Background="{TemplateBinding Control.Background}"
+                                 BorderBrush="{TemplateBinding Control.BorderBrush}"
+                                 BorderThickness="{TemplateBinding Control.BorderThickness}">
+                        <Grid Name="MapGrid"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

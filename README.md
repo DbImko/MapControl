@@ -1,2 +1,1 @@
-MapControl
-==========
+WPF map control

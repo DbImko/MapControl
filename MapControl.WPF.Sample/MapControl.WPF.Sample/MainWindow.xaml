@@ -1,0 +1,16 @@
+﻿<Window x:Class="MapControl.WPF.Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:map="clr-namespace:MapControl.WPF;assembly=MapControl.WPF"
+        Title="MainWindow" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        d:DesignHeight="590" d:DesignWidth="1025" SizeToContent="WidthAndHeight">
+
+    <Window.Resources>
+        
+    </Window.Resources>
+
+    <Grid x:Name="ContentPanel" Background="Gray" MinHeight="600" MinWidth="600">
+        <map:Map x:Name="Map">
+        </map:Map>
+    </Grid>
+</Window>
